@@ -1,8 +1,5 @@
-import json
-
 def lambda_handler(event, context):
     print("Entered into Lambda")
-    print("Received event: " + json.dumps(event, indent=4))
 
     statusCode, result = calculator(event)
 
